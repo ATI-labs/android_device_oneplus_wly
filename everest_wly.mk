@@ -12,9 +12,31 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/wly/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/everest/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_wly
+# Everest
+EVEREST_BUILD_TYPE := OFFICIAL
+EVEREST_MAINTAINER := Arman-ATI
+
+# Gapps
+WITH_GAPPS := true
+
+# UDFPS
+TARGET_HAS_UDFPS := true
+EXTRA_UDFPS_ANIMATIONS := true
+
+# Blur
+TARGET_SUPPORTS_BLUR := true
+
+# Launcher
+TARGET_INCLUDE_PIXEL_LAUNCHER := ture
+#TARGET_INCLUDE_LAWNCHAIR := true
+
+# ADB root
+ALLOW_ADBD_ROOT := true
+ALLOW_LOCAL_PROP_OVERRIDE := true
+
+PRODUCT_NAME := everest_wly
 PRODUCT_DEVICE := wly
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus

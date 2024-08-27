@@ -14,6 +14,9 @@ $(call inherit-product, device/oneplus/wly/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/everest/config/common_full_phone.mk)
 
+# Prebuilt kernel
+#PREBUILT_KERNEL := true
+
 # Everest
 EVEREST_BUILD_TYPE := OFFICIAL
 EVEREST_MAINTAINER := Arman-ATI

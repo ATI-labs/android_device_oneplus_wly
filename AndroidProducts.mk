@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_wly.mk
+    $(LOCAL_DIR)/everest_wly.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_wly-user \
-    lineage_wly-userdebug \
-    lineage_wly-eng
+    everest_wly-user \
+    everest_wly-userdebug \
+    everest_wly-eng
